@@ -1,0 +1,99 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+
+img{
+  height: 300px;
+}
+
+.logo{
+  height: auto;
+}
+
+@media(min-width: 1601px){
+  .beautypic{
+    height: 200px;
+    width: 300px;
+    float: left;
+  }
+  .beauty{
+    display: inline;
+    min-width: 1000px;
+    min-height: 100px;
+  }
+  .contents{
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 100px;
+    width: 300px;
+    height: 300px;
+  }
+  .construction{
+    display: inline;
+    float: right;
+    position: absolute;
+  }
+  .constructionpic{
+    width: 300px;
+    height: 200px;
+    float: left;
+  }
+  .contents2{
+    display: inline-block;
+    margin-left: 30px;
+    width: 300px;
+    height: 300px;
+  }
+  h1{
+    width: 700px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1{
+    text-align: center;
+    font-size: 50px;
+  }
+  .logo{
+    height: 15px;
+  }
+  .beautypic{
+    width: 100%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contents{
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .constructionpic{
+    width: 100%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contents2{
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

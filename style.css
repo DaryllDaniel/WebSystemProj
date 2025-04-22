@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+:root {
+    --cursor-color: black;
+    --accent-color: #34b7a7;
+    --contrast-color: #ffffff;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    width: auto;
+    padding: 10px;
+    color: black;
+    font-family: "Nova Square", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    background-image: url(https://images.pexels.com/photos/3368246/pexels-photo-3368246.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-color: rgba(255,255,255,0.6);
+    background-blend-mode: lighten;
+    background-size: 100% 100%;
+}
+
+@media (max-width: 480px) {
+    .name {
+        display: flex;
+        background-size: contain;
+        height: fit-content;
+        align-items: center;
+    }
+}
+
+.myName {
+    position: absolute;
+    top: 10%;
+    font-size: 8vw;
+}
+ 
+.typing {
+    font-size: 5vw;
+    color: rgb(16, 112, 45);
+    position: relative;
+    top: 50%;
+    border-right: 1px solid var(--cursor-color);
+    animation: blinking 1s steps( 1, end) infinite,
+    typing 2s steps( 40, end);
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-delay: 2s;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@keyframes blinking {
+    0% { border-color: transparent; }
+    50% { border-color: var(--cursor-color); }
+    100% { border-color: transparent; }
+}
+
+@keyframes typing {
+    0% { width: 0; }
+    50%, 100% {width: 100%; }
+}
+
+#sidebar a {
+    position: fixed;
+    left: -130px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 200px;
+    text-decoration: none;
+    font-family: "Nova Square", sans-serif;
+    font-size: 20px;
+    color: whitesmoke;
+    border-radius: 0 5px 5px 0;
+}
+
+#sidebar a:hover {
+    left: 0;
+}
+
+svg {
+    float: right;
+}
+
+#home {
+    top: 80px;
+    background-color: rgb(92, 103, 255);
+}
+
+#about {
+    top: 140px;
+    background-color: rgb(92, 103, 255);
+}
+
+#resume {
+    top: 200px;
+    background-color: rgb(92, 103, 255);
+}
+
+#portfolio {
+    top: 260px;
+    background-color: rgb(92, 103, 255);
+}
+
+#contact {
+    top: 320px;
+    background-color:rgb(92, 103, 255);
+}
+
+#footer {
+    background-color: rgb(185, 185, 192);
+}
+
+#footer-DDC {
+    font-weight: bolder;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    font-family: "Nova Square", sans-serif;
+}
+
+
+
+#about-content {
+    padding: 0 10%;
+    font-size: medium;
+}
+
+.main-about {
+    font-family: "Nova Square", sans-serif;
+    color: black;
+    background-image: linear-gradient(to bottom right, var(--contrast-color), rgb(233, 160, 25), red);
+    background-color: rgb(233, 234, 235);
+    background-blend-mode: soft-light;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    height: auto;
+    padding: 20px;
+}
+
+.main-about-content {
+    float: right;
+    width: 50%;
+    height: auto;
+}
+
+@media screen and (max-width: 480px) {
+    .main-about-content, #prof-pic {width: 100%;}
+}
+
+#prof-pic {
+    margin: 20px;
+}
+
+.content {
+    font-family: "Nova Square", sans-serif;
+    background-image: linear-gradient(to bottom right, var(--contrast-color), rgb(233, 160, 25), red);
+    background-color: rgb(233, 234, 235);
+    background-blend-mode: soft-light;
+    color: black;
+    padding: 20px;
+    margin: 12px;
+}
+
+ul {
+    list-style: none;
+}
+
+#portfolio-contents {
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to bottom right, var(--contrast-color), rgb(233, 160, 25), red);
+    background-color: rgb(233, 234, 235);
+    background-blend-mode: soft-light;
+}
+
+#portfolio-img-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 50%;
+    width: auto;
+    transition: all .5s ease;
+    padding: 10px;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#portfolio-img-box:hover {
+    transform: scale(1.2);
+}
+
+#portfolio-title {
+    background-image: url(https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    height: auto;
+    background-color: rgba(173, 164, 255, 0.6);
+    background-blend-mode: multiply;
+}
+
+.gap {
+    height: 50px;
+}
+
+button[type=submit] {
+    color: var(--contrast-color);
+    background: var(--accent-color);
+    border: 0;
+    padding: 10px 30px;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+#msg-form {
+    font-family: "Nova Square", sans-serif;
+    padding: 10px;
+}
+
+.info-item {
+    font-family: "Nova Square", sans-serif;
+}
+
+.info-wrap {
+    background-image: linear-gradient(to bottom right, var(--contrast-color), rgb(233, 160, 25), red);
+    background-color: rgb(233, 234, 235);
+    background-blend-mode: soft-light;
+    color: black;
+    padding: 10px;
+}
+
+.icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 50px;
+    width: auto;
+    background-color: rgb(187, 187, 187);
+    padding: 5px;
+    transition: .7s;
+    margin: 0 10px;
+    --s: 50px;  
+    --b: 8px;    
+    --g: 0px;    
+    --c: rgb(92, 103, 255); 
+    
+    width: var(--s);
+    aspect-ratio: 1;
+    outline-offset: calc(var(--s)/-2);
+    cursor: pointer;
+}
+
+.icon-container:hover {
+    background-color: var(--contrast-color);
+    outline: var();
+    transform: rotateZ(360deg);
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+}
